@@ -30,8 +30,8 @@ More detailed instructions can be found in the [Blender Manual](https://docs.ble
 ## Usage
 
 1. Ensure your scene has at least one camera.
-2. In the Properties panel, navigate to the `Scene` tab.
-3. Find the `Two Point Perspective` section.
+2. In the 3D Viewport, open the Sidebar with `N`.
+3. Go to the `Camera` tab and find the `Two-Point Perspective` panel.
 4. Optionally, set a custom target angle by checking the "Custom target angle" box and adjusting the angle value.
 5. Click the "Create Two Point Perspective Camera" button.
 

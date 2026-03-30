@@ -41,7 +41,7 @@ class Two_Point_Perspective_OT_Operator(Operator):
                     break
             else:
                 self.report({"ERROR"}, "There is no camera in the scene")
-                return
+                return {"CANCELLED"}
 
         active_cam = add_two_point_perspective_camera(
             context.scene.camera,

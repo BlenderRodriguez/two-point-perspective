@@ -58,9 +58,7 @@ def add_two_point_perspective_camera(cam_obj, auto_direction=False, custom_direc
     opposite_side = -math.tan(angle) * adjacent_side
     offset = (adjacent_side / math.cos(angle)) - adjacent_side
     offset_vec = 0, 0, offset
-    inv = cam_obj.matrix_world.copy()
-    inv.invert()
-    rotated_offset_vec = Vector(offset_vec) @ inv
+    rotated_offset_vec = cam_obj.matrix_world.to_quaternion() @ Vector(offset_vec)
     corrected_position = cam_position + rotated_offset_vec
 
 
